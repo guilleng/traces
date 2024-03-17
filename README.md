@@ -5,7 +5,9 @@ A script that interacts with [ipinfo.io](https://ipinfo.io) and
 [Geoapify](https://apidocs.geoapify.com/) to retrieve IP data and generate
 static maps for traceroutes.
 
-![route](https://github.com/guilleng/traces/blob/master/map.webp?raw=true)
+<p align="center">
+  <img src="https://github.com/guilleng/traces/blob/master/map.webp?raw=true" alt="Traceroute"/>
+</p>
 
 
 ### Usage
@@ -32,9 +34,11 @@ static maps for traceroutes.
 205.166.205.12  21.3069,-157.8583       Honolulu, Hawaii US - AS6360 University of Hawaii 
 205.166.205.33  21.3069,-157.8583       Honolulu, Hawaii US - AS6360 University of Hawaii 
 128.171.235.62  21.3069,-157.8583       Honolulu, Hawaii US - AS6360 University of Hawaii 
+
+https://maps.geoapify.com/v1/staticmap?style=maptiler-3d&width=1920&height=1080&center=lonlat:0,20&zoom=1.9&geometry=polyline:-77.3411,38.9687,-81.6954,41.4995,-87.6500,41.8500,-94.5786,39.0997,-104.9847,39.7392,-111.8911,40.7608,-118.2437,34.0522,-157.8583,21.3069;linewidth:5;linecolor:%23ff6600;lineopacity:1;linewidth:1&marker=lonlat:-77.3411,38.9687;color:%23ff0000;size:small;text:1|lonlat:-81.6954,41.4995;color:%23ff0000;size:small;text:2|lonlat:-87.6500,41.8500;color:%23ff0000;size:small;text:3|lonlat:-94.5786,39.0997;color:%23ff0000;size:small;text:4|lonlat:-104.9847,39.7392;color:%23ff0000;size:small;text:5|lonlat:-111.8911,40.7608;color:%23ff0000;size:small;text:6|lonlat:-118.2437,34.0522;color:%23ff0000;size:small;text:7|lonlat:-157.8583,21.3069;color:%23ff0000;size:small;text:8&scaleFactor=2&&apiKey=d548c5ed24604be6a9dd0d989631f783
 ```
 
-[Full Map](https://maps.geoapify.com/v1/staticmap?style=maptiler-3d&width=1920&height=1080&center=lonlat:0,20&zoom=1.9&geometry=polyline:-77.3411,38.9687,-81.6954,41.4995,-87.6500,41.8500,-94.5786,39.0997,-104.9847,39.7392,-111.8911,40.7608,-118.2437,34.0522,-157.8583,21.3069;linewidth:5;linecolor:%23ff6600;lineopacity:1;linewidth:1&marker=lonlat:-77.3411,38.9687;color:%23ff0000;size:small;text:1|lonlat:-81.6954,41.4995;color:%23ff0000;size:small;text:2|lonlat:-87.6500,41.8500;color:%23ff0000;size:small;text:3|lonlat:-94.5786,39.0997;color:%23ff0000;size:small;text:4|lonlat:-104.9847,39.7392;color:%23ff0000;size:small;text:5|lonlat:-111.8911,40.7608;color:%23ff0000;size:small;text:6|lonlat:-118.2437,34.0522;color:%23ff0000;size:small;text:7|lonlat:-157.8583,21.3069;color:%23ff0000;size:small;text:8&scaleFactor=2&&apiKey=d548c5ed24604be6a9dd0d989631f783)
+
 
 
 ### Installation
