@@ -12,8 +12,10 @@ static maps for traceroutes.
 
 ### Usage
 
+Requires `traceroute`, `curl` and `jq` packages.
+
 ```sh
-# trace 128.171.235.62
+trace 128.171.235.62
         IP      Latitude/Longitude      City / Autonomous System Number / Company
 ----------------------------------------------------------------------------------------
 244.5.0.175     Bogon   
@@ -37,20 +39,3 @@ static maps for traceroutes.
 
 https://maps.geoapify.com/v1/staticmap?style=maptiler-3d&width=1920&height=1080&center=lonlat:0,20&zoom=1.9&geometry=polyline:-77.3411,38.9687,-81.6954,41.4995,-87.6500,41.8500,-94.5786,39.0997,-104.9847,39.7392,-111.8911,40.7608,-118.2437,34.0522,-157.8583,21.3069;linewidth:5;linecolor:%23ff6600;lineopacity:1;linewidth:1&marker=lonlat:-77.3411,38.9687;color:%23ff0000;size:small;text:1|lonlat:-81.6954,41.4995;color:%23ff0000;size:small;text:2|lonlat:-87.6500,41.8500;color:%23ff0000;size:small;text:3|lonlat:-94.5786,39.0997;color:%23ff0000;size:small;text:4|lonlat:-104.9847,39.7392;color:%23ff0000;size:small;text:5|lonlat:-111.8911,40.7608;color:%23ff0000;size:small;text:6|lonlat:-118.2437,34.0522;color:%23ff0000;size:small;text:7|lonlat:-157.8583,21.3069;color:%23ff0000;size:small;text:8&scaleFactor=2&&apiKey=d548c5ed24604be6a9dd0d989631f783
 ```
-
-
-
-
-### Installation
-
-Requires the `traceroute`, `curl` and `jq` packages.
-
-Clone or copy.  Set executable permissions.  Make a symlink to the script. 
-
-```bash
-git clone https://github.com/guilleng/traces
-chmod +x traces/script.sh
-ln -s "$(pwd)/sprunges/script.sh" ~/.local/bin/traces
-```
-
-Or [download as zip](https://github.com/guilleng/sprunges/zipball/master).
