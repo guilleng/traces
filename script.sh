@@ -1,7 +1,8 @@
 #!/usr/bin/env sh
 
+#
 # Checks
-# ------
+#
 
 type curl >/dev/null 2>&1
 if [ $? -ne 0 ]; then
@@ -32,8 +33,9 @@ if [ -z "${1}" ]; then
 fi
 
 
+#
 # Data Fetching
-# -------------
+#
 
 JSON_DATA=$(mktemp)
 TRACE_DETAILS=$(mktemp)
@@ -48,9 +50,9 @@ else
   exit 1
 fi
 
-
+#
 # Output Table Generation
-# -----------------------
+#
 
 printf "\tIP\tLatitude/Longitude\tCity / Autonomous System Number / Company\n"
 printf "%s\n" "-----------------------------------------------------------------------------------------------------------------------"
@@ -61,8 +63,9 @@ cat "${JSON_DATA}" | jq 'if has("bogon") then "\(.ip) Bogon" else "\(.ip) \(.loc
 cat "${TRACE_DETAILS}"
 
 
+#
 # Static Map Generation
-# ---------------------
+#
 
 COORDINATES=$(cat "${TRACE_DETAILS}" | awk '{print $2}' | grep '[0-9]' | uniq | sed 's/,/ /g' | awk '{print $2, $1}')
 
